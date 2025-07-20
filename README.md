@@ -91,3 +91,15 @@ Key achievements:
  [GPT-4.1 Vision API] <-- if confidence < 50%
        |
 [Soft Manipulator] --> Grasps final object
+
+
+#### License
+
+Created by: Ibrahim Alsarraj
+
+This project is licensed under the MIT License.
+
+
+#### Contact
+
+For inquiries and feedback, please contact me on Instagram @d.a.v.i.c.h.i
