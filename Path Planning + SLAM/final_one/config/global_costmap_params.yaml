@@ -1,0 +1,14 @@
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_link
+  static_map: true
+  transform_tolerance: 0.3
+  width: 25.0   # Adjust based on your map size
+  height: 25.0  # Adjust based on your map size
+  origin_x: -12.2
+  origin_y: -12.2
+  planner_patience: 5.0
+  update_frequency: 1.0
+  publish_frequency: 1.0
+  rolling_window: false
+

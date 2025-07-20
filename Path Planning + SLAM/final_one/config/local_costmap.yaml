@@ -1,0 +1,39 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_link
+  update_frequency: 0.5
+  publish_frequency: 0.1
+  transform_tolerance: 0.5
+  static_map: false
+  rolling_window: true
+  width: 6.0
+  height: 6.0
+  resolution: 0.05
+  origin_x: -3.0
+  origin_y: -3.0
+
+  plugins:
+    - {name: obstacle_layer,  type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+
+obstacle_layer:
+  combination_method: 1 
+  enabled: true
+  max_obstacle_height: 1.5  # Increase if obstacles are missing
+  min_obstacle_height: 0.1
+  observation_sources: point_cloud_sensor
+  point_cloud_sensor:
+    data_type: PointCloud2
+    topic: /rtabmap/cloud_obstacles
+    marking: true
+    clearing: true
+    obstacle_range: 3.0
+    raytrace_range: 4.0
+    min_obstacle_height: 0.1
+    max_obstacle_height: 1.5
+    filter_size: 0.1
+
+inflation_layer:
+  enabled: true
+  cost_scaling_factor: 5.0  
+  inflation_radius: 0.5 

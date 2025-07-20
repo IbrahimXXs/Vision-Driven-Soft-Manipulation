@@ -1,0 +1,70 @@
+#base_local_planner: "dwa_local_planner/DWAPlannerROS"
+#controller_frequency: 5.0
+planner_patience: 10.0  # Allow global planner to wait before retrying
+controller_patience: 10.0  # Allow the local planner to wait before retrying
+controller_frequency: 10.0  # ===>>> Set this higher, e.g., 15 or 20 Hz
+base_local_planner: teb_local_planner/TebLocalPlannerROS
+TebLocalPlannerROS:
+  max_vel_x: 0.4
+  max_vel_x_backwards: 0.2
+  max_vel_theta: 1.0
+  acc_lim_x: 0.5
+  acc_lim_theta: 0.5
+  
+  min_turning_radius: 0.0  # For differential drive
+  
+  footprint_model:
+    type: "point"  # Or specify your robot's footprint
+  
+  odom_topic: odom
+  global_plan_viapoint_sep: 0.1
+  include_viapoints: true
+recovery_behavior_enabled: false
+
+# Global Costmap (uses RTAB-Map's grid)
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_link
+  update_frequency: 1.0
+  publish_frequency: 1.0
+  transform_tolerance: 0.5
+  static_map: false  # Important! We're using a dynamic map
+  rolling_window: false
+  plugins:
+    - {name: rtabmap_layer, type: "rtabmap_costmap_plugins::StaticLayer"}
+
+# Local Costmap
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_link
+  update_frequency: 5.0
+  publish_frequency: 2.0
+  transform_tolerance: 0.5
+  static_map: false
+  rolling_window: true
+  width: 6.0
+  height: 6.0
+  resolution: 0.05
+  origin_x: -3.0
+  origin_y: -3.0
+  plugins:
+    - {name: obstacles, type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation, type: "costmap_2d::InflationLayer"}
+
+# Base Local Planner (typically TrajectoryPlannerROS or DWA)
+TrajectoryPlannerROS:
+  max_vel_x: 0.3
+  min_vel_x: 0.1
+  max_vel_theta: 1.0
+  min_vel_theta: -1.0
+  min_in_place_vel_theta: 0.5
+  acc_lim_x: 0.5
+  acc_lim_theta: 1.0
+  holonomic_robot: false  # Change if you have a holonomic robot
+
+rtabmap_layer:
+  map_topic: /rtabmap/grid_map
+  subscribe_to_updates: true
+  track_unknown_space: true
+  use_maximum: false
+  unknown_cost_value: -1

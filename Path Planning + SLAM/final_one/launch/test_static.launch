@@ -1,0 +1,20 @@
+<launch>
+    <!-- Launch the map server with your static map -->
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find my_rtab_package)/maps/robo_dog.yaml"/>
+
+    <node pkg="tf" type="static_transform_publisher" name="static_tf_publisher" args="0 0 0 0 0 0 map base_link 100"/>
+    <!-- Launch the move_base node for navigation -->
+    <node pkg="move_base" type="move_base" name="move_base">
+        <!-- Configuration of costmaps and planners -->
+        <param name="base_global_planner" value="navfn/NavfnROS"/>
+        <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+
+        <!-- Global Costmap Configuration -->
+        <rosparam file="$(find my_rtab_package)/config/global_costmap_params.yaml" command="load"/>
+
+        <!-- Local Costmap Configuration -->
+        <rosparam file="$(find my_rtab_package)/config/local_costmap_params.yaml" command="load"/>
+    </node>
+
+    <!-- Launch the static transform publisher to link map and base_link frames -->
+</launch>

@@ -1,0 +1,17 @@
+<launch>
+    <!-- Start RPLIDAR -->
+    <include file="$(find rplidar_ros)/launch/view_rplidar_a2m12.launch">
+    </include>
+
+    <!-- Broadcast static transform from /base_link to /laser_link -->
+    <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0 0 0.1 0 0 0 base_link laser 100"/>
+
+    <!-- Broadcast static transform from /odom to /base_link -->
+    <node pkg="tf" type="static_transform_publisher" name="odom_to_base_link" args="0 0 0 0 0 0 odom base_link 100"/>
+
+    <!-- Start gmapping -->
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+        <param name="scan_topic" value="/scan"/>
+    </node>
+
+</launch>

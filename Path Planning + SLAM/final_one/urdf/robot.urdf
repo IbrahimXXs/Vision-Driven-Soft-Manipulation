@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot name="my_robot">
+
+  <!-- Base Link lifted by 0.5 meters -->
+  <link name="base_link"/>
+  <joint name="base_link_fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.5" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Camera -->
+  <link name="camera_link"/>
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.2 0 0.2" rpy="0 0.3235 0"/>
+  </joint>
+
+  <!-- IMU -->
+  <link name="imu"/>
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+</robot>

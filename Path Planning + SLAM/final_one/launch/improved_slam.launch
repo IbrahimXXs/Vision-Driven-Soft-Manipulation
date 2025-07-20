@@ -1,0 +1,51 @@
+<launch>
+<node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_camera" args="0.2 0 0.2 0 0.3235 0 base_link camera_link" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_imu" args="0 0 0 0 0 0 base_link imu" />
+  <node name="rosbag_play" pkg="rosbag" type="play" args="--clock $(find final_one)/bags/robo_dog_minimal.bag" output="screen"/>
+  <node pkg="nodelet" type="nodelet" name="rgbd_sync" args="standalone rtabmap_sync/rgbd_sync" output="screen">
+    <param name="use_sim_time" value="true"/> <!-- Match bag time -->
+    <!-- Input Topics -->
+    <remap from="rgb/image" to="/camera/color/image_raw_fixed"/>
+<remap from="depth/image" to="/camera/depth/image_rect_raw_fixed"/>
+<remap from="rgb/camera_info" to="/camera/color/camera_info_fixed"/>
+    <remap from="rgbd_image"      to="rgbd_image"/>  <!-- Synced output -->
+
+    <!-- Sync Parameters -->
+    <param name="approx_sync"               type="bool"   value="true"/>
+    <param name="approx_sync_max_interval"  type="double" value="0.1"/>  <!-- 100ms tolerance -->
+    <param name="queue_size"                type="int"    value="30"/>   <!-- Large buffer -->
+    <param name="use_sim_time"              type="bool"   value="true"/> <!-- Match bag time -->
+
+    <!-- Optimization -->
+    <param name="compressed_rate"           type="double" value="0"/>    <!-- Disable throttling -->
+    <param name="reg_strategy"              type="int"    value="0"/>    <!-- Skip depth registration -->
+</node>
+
+<node pkg="rtabmap_odom" type="rgbd_odometry" name="rgbd_odometry" output="screen">
+  <param name="use_sim_time" value="true"/> <!-- Critical -->
+  <param name="stamp_tolerance" value="0.1"/> <!-- Allow 100ms jumps -->
+  <!-- Keep other params -->
+  <!-- Use synced RGB-D input -->
+  <remap from="rgbd_image" to="/rgbd_image"/>  <!-- From rgbd_sync output -->
+  <remap from="rgb/image" to="/camera/color/image_raw_fixed"/>
+  <remap from="depth/image" to="/camera/depth/image_rect_raw_fixed"/>
+  <remap from="rgb/camera_info" to="/camera/color/camera_info_fixed"/>
+  
+  <!-- Sync Parameters (reduced since rgbd_sync already did synchronization) -->
+  <param name="approx_sync"               type="bool"   value="true"/> <!-- Already synced -->
+  <param name="queue_size"                type="int"    value="10"/>    <!-- Smaller buffer needed -->
+  
+  <!-- Processing Parameters -->
+  <param name="reg_strategy"              type="int"    value="0"/>     <!-- Keep disabled -->
+  <param name="publish_tf"                type="bool"   value="true"/>
+  <param name="guess_frame_id"            type="string" value=""/>
+  <param name="wait_for_transform"        type="bool"   value="false"/>
+  <param name="use_sim_time"              type="bool"   value="true"/>  <!-- Match bag playback -->
+  
+  <!-- Performance Tuning -->
+  <param name="max_depth"                 type="double" value="4.0"/>   <!-- Adjust for your sensor -->
+  <param name="optical_flow"              type="bool"   value="false"/> <!-- Disable for stability -->
+  <param name="min_inliers"               type="int"    value="10"/>    <!-- Default: 5 -->
+</node>
+
+</launch>

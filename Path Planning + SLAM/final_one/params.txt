@@ -1,0 +1,181 @@
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.17.0
+ * /rtabmap/rgbd_odometry/GFTT/MinDistance: 10
+ * /rtabmap/rgbd_odometry/Odom/IMUAngularUpdate: True
+ * /rtabmap/rgbd_odometry/Odom/IMUFiltering: True
+ * /rtabmap/rgbd_odometry/Odom/IMUInitCount: 50
+ * /rtabmap/rgbd_odometry/Odom/IMULinearUpdate: True
+ * /rtabmap/rgbd_odometry/Odom/Strategy: 1
+ * /rtabmap/rgbd_odometry/OdomF2M/MaxSize: 6000
+ * /rtabmap/rgbd_odometry/Reg/Force3DoF: True
+ * /rtabmap/rgbd_odometry/Vis/MaxFeatures: 6000
+ * /rtabmap/rgbd_odometry/approx_sync: True
+ * /rtabmap/rgbd_odometry/approx_sync_max_interval: 0.0
+ * /rtabmap/rgbd_odometry/config_path: 
+ * /rtabmap/rgbd_odometry/expected_update_rate: 0.0
+ * /rtabmap/rgbd_odometry/frame_id: base_link
+ * /rtabmap/rgbd_odometry/ground_truth_base_frame_id: 
+ * /rtabmap/rgbd_odometry/ground_truth_frame_id: 
+ * /rtabmap/rgbd_odometry/guess_frame_id: 
+ * /rtabmap/rgbd_odometry/guess_min_rotation: 0.0
+ * /rtabmap/rgbd_odometry/guess_min_translation: 0.0
+ * /rtabmap/rgbd_odometry/keep_color: False
+ * /rtabmap/rgbd_odometry/max_update_rate: 0.0
+ * /rtabmap/rgbd_odometry/odom_frame_id: odom
+ * /rtabmap/rgbd_odometry/publish_tf: True
+ * /rtabmap/rgbd_odometry/subscribe_rgbd: False
+ * /rtabmap/rgbd_odometry/sync_queue_size: 10
+ * /rtabmap/rgbd_odometry/topic_queue_size: 1
+ * /rtabmap/rgbd_odometry/wait_for_transform_duration: 0.2
+ * /rtabmap/rgbd_odometry/wait_imu_to_init: False
+ * /rtabmap/rtabmap/Mem/IncrementalMemory: true
+ * /rtabmap/rtabmap/Mem/InitWMWithAllNodes: false
+ * /rtabmap/rtabmap/Optimizer/Slam2D: True
+ * /rtabmap/rtabmap/Reg/Force3DoF: True
+ * /rtabmap/rtabmap/Rtabmap/StartNewMapOnLoopClosure: True
+ * /rtabmap/rtabmap/approx_sync: True
+ * /rtabmap/rtabmap/config_path: 
+ * /rtabmap/rtabmap/database_path: ~/.ros/rtabmap.db
+ * /rtabmap/rtabmap/frame_id: base_link
+ * /rtabmap/rtabmap/gen_depth: False
+ * /rtabmap/rtabmap/gen_depth_decimation: 1
+ * /rtabmap/rtabmap/gen_depth_fill_holes_error: 0.1
+ * /rtabmap/rtabmap/gen_depth_fill_holes_size: 0
+ * /rtabmap/rtabmap/gen_depth_fill_iterations: 1
+ * /rtabmap/rtabmap/gen_scan: False
+ * /rtabmap/rtabmap/ground_truth_base_frame_id: 
+ * /rtabmap/rtabmap/ground_truth_frame_id: 
+ * /rtabmap/rtabmap/initial_pose: 
+ * /rtabmap/rtabmap/landmark_angular_variance: 9999.0
+ * /rtabmap/rtabmap/landmark_linear_variance: 0.0001
+ * /rtabmap/rtabmap/loc_thr: 0.0
+ * /rtabmap/rtabmap/map_frame_id: map
+ * /rtabmap/rtabmap/odom_frame_id: odom
+ * /rtabmap/rtabmap/odom_frame_id_init: 
+ * /rtabmap/rtabmap/odom_sensor_sync: False
+ * /rtabmap/rtabmap/odom_tf_angular_variance: 0.001
+ * /rtabmap/rtabmap/odom_tf_linear_variance: 0.001
+ * /rtabmap/rtabmap/publish_tf: True
+ * /rtabmap/rtabmap/scan_cloud_max_points: 0
+ * /rtabmap/rtabmap/subscribe_depth: True
+ * /rtabmap/rtabmap/subscribe_imu: True
+ * /rtabmap/rtabmap/subscribe_odom_info: True
+ * /rtabmap/rtabmap/subscribe_rgb: True
+ * /rtabmap/rtabmap/subscribe_rgbd: False
+ * /rtabmap/rtabmap/subscribe_scan: False
+ * /rtabmap/rtabmap/subscribe_scan_cloud: False
+ * /rtabmap/rtabmap/subscribe_scan_descriptor: False
+ * /rtabmap/rtabmap/subscribe_stereo: False
+ * /rtabmap/rtabmap/subscribe_user_data: False
+ * /rtabmap/rtabmap/sync_queue_size: 10
+ * /rtabmap/rtabmap/topic_queue_size: 1
+ * /rtabmap/rtabmap/wait_for_transform_duration: 0.2
+ * /rtabmap/rtabmap_viz/approx_sync: True
+ * /rtabmap/rtabmap_viz/frame_id: base_link
+ * /rtabmap/rtabmap_viz/odom_frame_id: 
+ * /rtabmap/rtabmap_viz/subscribe_depth: True
+ * /rtabmap/rtabmap_viz/subscribe_odom_info: True
+ * /rtabmap/rtabmap_viz/subscribe_rgb: True
+ * /rtabmap/rtabmap_viz/subscribe_rgbd: False
+ * /rtabmap/rtabmap_viz/subscribe_scan: False
+ * /rtabmap/rtabmap_viz/subscribe_scan_cloud: False
+ * /rtabmap/rtabmap_viz/subscribe_scan_descriptor: False
+ * /rtabmap/rtabmap_viz/subscribe_stereo: False
+ * /rtabmap/rtabmap_viz/sync_queue_size: 10
+ * /rtabmap/rtabmap_viz/topic_queue_size: 1
+ * /rtabmap/rtabmap_viz/wait_for_transform_duration: 0.2
+ * /use_sim_time: True
+
+NODES
+  /
+    base_link_to_camera (tf2_ros/static_transform_publisher)
+    base_link_to_imu (tf2_ros/static_transform_publisher)
+    rosbag_play (rosbag/play)
+  /rtabmap/
+    rgbd_odometry (rtabmap_odom/rgbd_odometry)
+    rtabmap (rtabmap_slam/rtabmap)
+    rtabmap_viz (rtabmap_viz/rtabmap_viz)
+
+auto-starting new master
+process[master]: started with pid [15913]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to aae20b42-0b00-11f0-be80-711fbe420729
+process[rosout-1]: started with pid [15961]
+started core service [/rosout]
+process[rosbag_play-2]: started with pid [15969]
+process[base_link_to_camera-3]: started with pid [15970]
+process[base_link_to_imu-4]: started with pid [15971]
+process[rtabmap/rgbd_odometry-5]: started with pid [15972]
+process[rtabmap/rtabmap-6]: started with pid [15974]
+process[rtabmap/rtabmap_viz-7]: started with pid [15983]
+[ INFO] [1743075794.751387936]: Opening /home/ramy/catkin_ws/src/final_one/bags/robo_dog_minimal.bag
+
+Waiting 0.2 seconds after advertising topics... done.
+
+Hit space to toggle paused, or 's' to step.
+[ INFO] [1743075795.002407793]: Starting node...on: 0.006987 / 102.353375               
+[ INFO] [1743075795.003117564]: Starting node...
+[ INFO] [1743075795.005052799]: Initializing nodelet with 20 worker threads.            
+[ INFO] [1743075795.036407564]: Odometry: frame_id               = base_link            
+[ INFO] [1743075795.036427886]: Odometry: odom_frame_id          = odom
+[ INFO] [1743075795.036435160]: Odometry: publish_tf             = true
+[ INFO] [1743075795.036441331]: Odometry: wait_for_transform     = true
+[ INFO] [1743075795.036453147]: Odometry: wait_for_transform_duration  = 0.200000
+[ INFO] [1743075795.036459270]: Odometry: log_to_rosout_level    = 4
+[ INFO] [1743075795.036477901]: Odometry: initial_pose           = xyz=0.000000,0.000000,0.000000 rpy=0.000000,-0.000000,0.000000
+[ INFO] [1743075795.036484328]: Odometry: ground_truth_frame_id  = 
+[ INFO] [1743075795.036490783]: Odometry: ground_truth_base_frame_id = 
+[ INFO] [1743075795.036497292]: Odometry: config_path            = 
+[ INFO] [1743075795.036503325]: Odometry: publish_null_when_lost = true
+[ INFO] [1743075795.036509334]: Odometry: publish_compressed_sensor_data = false
+[ INFO] [1743075795.036515730]: Odometry: guess_frame_id         = 
+[ INFO] [1743075795.036521660]: Odometry: guess_min_translation  = 0.000000
+[ INFO] [1743075795.036528062]: Odometry: guess_min_rotation     = 0.000000
+[ INFO] [1743075795.036534222]: Odometry: guess_min_time         = 0.000000
+[ INFO] [1743075795.036540184]: Odometry: expected_update_rate   = 0.000000 Hz
+[ INFO] [1743075795.036546286]: Odometry: max_update_rate        = 0.000000 Hz
+[ INFO] [1743075795.036552609]: Odometry: min_update_rate        = 0.000000 Hz
+[ INFO] [1743075795.036558467]: Odometry: wait_imu_to_init       = false
+[ INFO] [1743075795.036564223]: Odometry: sensor_data_compression_format   = .jpg
+[ INFO] [1743075795.036570277]: Odometry: sensor_data_parallel_compression = true
+[ INFO] [1743075795.036586644]: Odometry: stereoParams_=0 visParams_=1 icpParams_=0
+[ INFO] [1743075795.041413584]: Initializing nodelet with 20 worker threads.
+[ INFO] [1743075795.045400873]: Setting odometry parameter "GFTT/MinDistance"="10"
+[ INFO] [1743075795.062710734]: Setting odometry parameter "Odom/Strategy"="1"          
+[ INFO] [1743075795.065698959]: Setting odometry parameter "OdomF2M/MaxSize"="6000"     
+[ INFO] [1743075795.120196414]: /rtabmap/rtabmap(maps): map_filter_radius          = 0.000000
+[ INFO] [1743075795.120220147]: /rtabmap/rtabmap(maps): map_filter_angle           = 30.000000
+[ INFO] [1743075795.120231362]: /rtabmap/rtabmap(maps): map_cleanup                = true
+[ INFO] [1743075795.120241745]: /rtabmap/rtabmap(maps): map_always_update          = false
+[ INFO] [1743075795.120252382]: /rtabmap/rtabmap(maps): map_empty_ray_tracing      = true
+[ INFO] [1743075795.120266974]: /rtabmap/rtabmap(maps): cloud_output_voxelized     = true
+[ INFO] [1743075795.120277626]: /rtabmap/rtabmap(maps): cloud_subtract_filtering   = false
+[ INFO] [1743075795.120288964]: /rtabmap/rtabmap(maps): cloud_subtract_filtering_min_neighbors = 2
+[ INFO] [1743075795.120589036]: /rtabmap/rtabmap(maps): octomap_tree_depth         = 16
+[ INFO] [1743075795.125201070]: rtabmap_viz: Using configuration from "/home/ramy/.ros/rtabmap_gui.ini"
+[ INFO] [1743075795.139656952]: rtabmap: frame_id      = base_link.353375               
+[ INFO] [1743075795.139680174]: rtabmap: odom_frame_id = odom
+[ INFO] [1743075795.139693455]: rtabmap: map_frame_id  = map
+[ INFO] [1743075795.139704829]: rtabmap: log_to_rosout_level = 4
+[ INFO] [1743075795.139716272]: rtabmap: initial_pose  = 
+[ INFO] [1743075795.139727105]: rtabmap: use_action_for_goal  = false
+[ INFO] [1743075795.139739654]: rtabmap: tf_delay      = 0.050000
+[ INFO] [1743075795.139750963]: rtabmap: tf_tolerance  = 0.100000
+[ INFO] [1743075795.139762494]: rtabmap: odom_sensor_sync   = false
+[ INFO] [1743075795.139773359]: rtabmap: pub_loc_pose_only_when_localizing = false
+[ INFO] [1743075795.140141729]: rtabmap: gen_scan  = false
+[ INFO] [1743075795.140156374]: rtabmap: gen_depth  = false
+[ INFO] [1743075795.153390525]: Setting odometry parameter "Reg/Force3DoF"="true"       
+[ INFO] [1743075795.186202903]: Setting odometry parameter "Vis/MaxFeatures"="6000"     
+[ INFO] [1743075795.293390058]: Setting RTAB-Map parameter "Mem/IncrementalMemory"="true"
+[ INFO] [1743075795.293659854]: Setting RTAB-Map parameter "Mem/InitWMWithAllNodes"="false"
+[ INFO] [1743075795.349390817, 1739892726.018903329]: RGBDOdometry: approx_sync    = true
+[ INFO] [1743075795.349425620, 1739892726.018903329]: RGBDOdometry: approx_sync_max_interval = 0.000000
+[ INFO] [1743075795.349435711, 1739892726.018903329]: RGBDOdometry: topic_queue_size = 1
+[ INFO] [1743075795.349446376, 1739892726.018903329]: RGBDOdometry: sync_queue_size  = 10
+[ INFO] [1743075795.349454934, 1739892726.018903329]: RGBDOdometry: subscribe_rgbd = false
+[ INFO] [1743075795.349463523, 1739892726.018903329]: RGBDOdometry: rgbd_cameras   = 1
+[ INFO] [1743075795.349473281, 1739892726.018903329]: RGBDOdometry: keep_color     = false
+

@@ -1,0 +1,17 @@
+<launch>
+<param name="/use_sim_time" value="false"/>
+<arg name="robot_frame" default="base_link"/>
+    <arg name="world_frame" default="map"/>
+  <node pkg="move_base" type="move_base" name="move_base" output="screen">
+    <rosparam file="$(find final_one)/config/global_costmap_2.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find final_one)/config/local_costmap_2.yaml" command="load" ns="local_costmap"/>
+    <rosparam file="$(find final_one)/config/base_local_planner.yaml" command="load" />
+    <rosparam file="$(find final_one)/config/dwa_local_planner_params.yaml" command="load" />
+
+    
+    <param name="base_global_planner" value="navfn/NavfnROS"/>
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+    <remap from="/odom" to="/rtabmap/odom"/>
+        <remap from="/map" to="/rtabmap/grid_map" />
+  </node>
+</launch>

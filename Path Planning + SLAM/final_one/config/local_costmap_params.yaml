@@ -1,0 +1,13 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_link
+  static_map: false
+  rolling_window: true
+  resolution: 0.05
+  origin_x: -3.0  # Half of width in negative
+  origin_y: -3.0  # Half of height in negative
+  width: 5.0
+  height: 5.0
+  update_frequency: 5.0
+  publish_frequency: 5.0
+

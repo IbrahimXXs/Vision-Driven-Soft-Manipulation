@@ -1,0 +1,62 @@
+<launch>
+  <param name="tf_buffer_duration" value="10.0"/>
+  <param name="queue_size" value="20"/>
+  <param name="sync_queue_size" value="20"/>
+
+  <!-- Run depth_to_laser.launch -->
+  <!--<include file="$(find final_one)/launch/depth_to_laser.launch"/>-->
+
+  <!-- Arguments -->
+  <arg name="rtabmap_args" default="--delete_db_on_start"/>
+  <arg name="rgb_topic" default="/camera/color/image_raw_fixed"/>
+  <arg name="depth_topic" default="/camera/depth/image_rect_raw_fixed"/>
+  <arg name="camera_info_topic" default="/camera/color/camera_info_fixed"/>
+  <arg name="approx_sync" default="true"/>
+  <arg name="visual_odometry" default="true"/>
+  <arg name="localization" default="false"/>
+
+  <!-- Publish static transforms -->
+  <!--<node pkg="tf" type="static_transform_publisher" name="base_to_camera" args="0 0 0.5 0 0 0 base_link camera_link 100"/>-->
+  <!--<node pkg="tf" type="static_transform_publisher" name="odom_to_camera" args="0 0 0 0 0 0 odom camera_link 100"/>-->
+  <!--<node pkg="tf" type="static_transform_publisher" name="odom_to_camera" args="0 0 0 0 0 0 odom map 100"/>-->
+  <!--<node pkg="tf" type="static_transform_publisher" name="old_imu_to_new_imu" args="0 0 0 0 0 0 imu imu_link 100"/>-->
+
+<param name="use_sim_time" type="bool" value="false"/>
+<param name="rtabmap/rgbd_odometry/wait_for_transform_duration" type="double" value="0.5"/>
+<node name="fix_huge_delay" type="PUB_FIXED_TOPICS.py" pkg="final_one" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_camera" args="0.2 0 0.2 0 0.3235 0 base_link camera_link" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_imu" args="0 0 0 0 0 0 base_link imu" />
+  <node name="rosbag_play" pkg="rosbag" type="play" args="--clock $(find final_one)/bags/robo_dog_minimal.bag" output="screen"/>
+  <!-- Include RTAB-Map -->
+  <include file="$(find final_one)/launch/rtabmap2.launch">
+    <arg name="rtabmap_args" value="$(arg rtabmap_args)"/>
+    <arg name="rgb_topic" value="$(arg rgb_topic)"/>
+    <arg name="depth_topic" value="$(arg depth_topic)"/>
+    <arg name="camera_info_topic" value="$(arg camera_info_topic)"/>
+    <arg name="approx_sync" value="$(arg approx_sync)"/>
+    <arg name="visual_odometry" value="$(arg visual_odometry)"/>
+    <arg name="localization" value="$(arg localization)"/>
+
+    <!-- Enforce 2D motion -->
+    <param name="Reg/Force3DoF" value="true"/>
+    <param name="RGBD/PlanarMode" value="true"/>
+    <param name="FrameId/Fixed" value="base_link"/>
+    <param name="Odom/TwoD" value="true"/>
+    <param name="Gravity" value="0 0 -9.81"/>
+
+
+    <!-- Ensure no unwanted IMU interference -->
+    <param name="Odom/IMUUsed" value="false"/>
+    <param name="Reg/Strategy" value="0"/>  <!-- Only visual odometry -->
+    <param name="Odom/Strategy" value="1"/>
+    <!-- maximum features map size, default 2000 -->
+    <param name="OdomF2M/MaxSize" type="string" value="1000"/> 
+    <!-- maximum features extracted by image, default 1000 -->
+    <param name="Vis/MaxFeatures" type="string" value="600"/>
+  </include>
+
+  <!-- Map server -->
+  <!--<node name="map_server" pkg="map_server" type="map_server" args="$(find final_one)/maps/robo_dog.yaml" output="screen"/>-->
+
+  <!-- Play ROS bag file -->
+</launch>

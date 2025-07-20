@@ -1,0 +1,527 @@
+rosrun final_one apply_odom_motion.py
+[INFO] [1743452282.478416]: [INIT] Robot Controller Initialized
+[INFO] [1743452283.481392]: [MAIN] Start Pose: (-0.02583995647728443, 0.13694052398204803, 0.7224096395363508)
+[INFO] [1743452283.484668]: [MAIN] Goal Pose: (0, 0, 0)
+[INFO] [1743452283.487822]: [EXECUTE] Motion Execution Started
+[INFO] [1743452283.491059]: [ROTATE] Current: 0.722, Target: -1.384, Diff: -2.107
+[INFO] [1743452283.502140]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452283.655107]: [ROTATE] Current: 0.723, Target: -1.384, Diff: -2.107
+[WARN] [1743452283.661539]: Possible wrong direction! Count: 1
+[INFO] [1743452283.664380]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452283.817970]: [ROTATE] Current: 0.729, Target: -1.384, Diff: -2.114
+[WARN] [1743452283.830122]: Possible wrong direction! Count: 2
+[INFO] [1743452283.832850]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452283.995418]: [ROTATE] Current: 0.753, Target: -1.384, Diff: -2.137
+[WARN] [1743452284.001604]: Possible wrong direction! Count: 3
+[WARN] [1743452284.005518]: Direction reversed due to wrong movement!
+[INFO] [1743452284.015080]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452284.179623]: [ROTATE] Current: 0.759, Target: -1.384, Diff: -2.144
+[WARN] [1743452284.192141]: Possible wrong direction! Count: 1
+[INFO] [1743452284.195179]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452284.348028]: [ROTATE] Current: 0.759, Target: -1.384, Diff: -2.143
+[WARN] [1743452284.356981]: Possible wrong direction! Count: 2
+[INFO] [1743452284.361546]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452284.514272]: [ROTATE] Current: 0.756, Target: -1.384, Diff: -2.140
+[WARN] [1743452284.524925]: Possible wrong direction! Count: 3
+[WARN] [1743452284.528352]: Direction reversed due to wrong movement!
+[INFO] [1743452284.531453]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452284.687818]: [ROTATE] Current: 0.729, Target: -1.384, Diff: -2.113
+[INFO] [1743452284.694051]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452284.852547]: [ROTATE] Current: 0.740, Target: -1.384, Diff: -2.124
+[WARN] [1743452284.861557]: Possible wrong direction! Count: 1
+[INFO] [1743452284.868938]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452285.030568]: [ROTATE] Current: 0.748, Target: -1.384, Diff: -2.133
+[WARN] [1743452285.034589]: Possible wrong direction! Count: 2
+[INFO] [1743452285.037609]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452285.192901]: [ROTATE] Current: 0.759, Target: -1.384, Diff: -2.143
+[WARN] [1743452285.196578]: Possible wrong direction! Count: 3
+[WARN] [1743452285.207028]: Direction reversed due to wrong movement!
+[INFO] [1743452285.209947]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452285.363059]: [ROTATE] Current: 0.782, Target: -1.384, Diff: -2.166
+[WARN] [1743452285.375218]: Possible wrong direction! Count: 1
+[INFO] [1743452285.387658]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452285.541219]: [ROTATE] Current: 0.770, Target: -1.384, Diff: -2.154
+[INFO] [1743452285.549596]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452285.703878]: [ROTATE] Current: 0.764, Target: -1.384, Diff: -2.148
+[WARN] [1743452285.707055]: Possible wrong direction! Count: 1
+[INFO] [1743452285.713095]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452285.874039]: [ROTATE] Current: 0.755, Target: -1.384, Diff: -2.139
+[WARN] [1743452285.885600]: Possible wrong direction! Count: 2
+[INFO] [1743452285.889245]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452286.042520]: [ROTATE] Current: 0.732, Target: -1.384, Diff: -2.117
+[INFO] [1743452286.048475]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452286.202771]: [ROTATE] Current: 0.721, Target: -1.384, Diff: -2.105
+[INFO] [1743452286.214885]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452286.370348]: [ROTATE] Current: 0.703, Target: -1.384, Diff: -2.088
+[INFO] [1743452286.386108]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452286.540409]: [ROTATE] Current: 0.684, Target: -1.384, Diff: -2.068
+[INFO] [1743452286.544594]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452286.704016]: [ROTATE] Current: 0.668, Target: -1.384, Diff: -2.053
+[INFO] [1743452286.715255]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452286.868862]: [ROTATE] Current: 0.655, Target: -1.384, Diff: -2.039
+[INFO] [1743452286.875049]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452287.034563]: [ROTATE] Current: 0.630, Target: -1.384, Diff: -2.015
+[INFO] [1743452287.040520]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452287.193079]: [ROTATE] Current: 0.620, Target: -1.384, Diff: -2.005
+[WARN] [1743452287.198632]: Possible wrong direction! Count: 1
+[INFO] [1743452287.207223]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452287.363976]: [ROTATE] Current: 0.591, Target: -1.384, Diff: -1.975
+[INFO] [1743452287.369934]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452287.523719]: [ROTATE] Current: 0.588, Target: -1.384, Diff: -1.972
+[WARN] [1743452287.535085]: Possible wrong direction! Count: 1
+[INFO] [1743452287.546747]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452287.700473]: [ROTATE] Current: 0.573, Target: -1.384, Diff: -1.958
+[INFO] [1743452287.707703]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452287.860201]: [ROTATE] Current: 0.543, Target: -1.384, Diff: -1.928
+[INFO] [1743452287.869237]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452288.030168]: [ROTATE] Current: 0.535, Target: -1.384, Diff: -1.919
+[WARN] [1743452288.040662]: Possible wrong direction! Count: 1
+[INFO] [1743452288.055787]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452288.210796]: [ROTATE] Current: 0.518, Target: -1.384, Diff: -1.902
+[INFO] [1743452288.214811]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452288.371833]: [ROTATE] Current: 0.492, Target: -1.384, Diff: -1.876
+[INFO] [1743452288.375125]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452288.594141]: [ROTATE] Current: 0.479, Target: -1.384, Diff: -1.863
+[INFO] [1743452288.597978]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452288.759466]: [ROTATE] Current: 0.455, Target: -1.384, Diff: -1.839
+[INFO] [1743452288.762807]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452288.927444]: [ROTATE] Current: 0.444, Target: -1.384, Diff: -1.828
+[INFO] [1743452288.937466]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452289.092535]: [ROTATE] Current: 0.431, Target: -1.384, Diff: -1.815
+[INFO] [1743452289.095864]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452289.259139]: [ROTATE] Current: 0.402, Target: -1.384, Diff: -1.786
+[INFO] [1743452289.262487]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452289.421330]: [ROTATE] Current: 0.398, Target: -1.384, Diff: -1.782
+[WARN] [1743452289.424540]: Possible wrong direction! Count: 1
+[INFO] [1743452289.427478]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452289.581257]: [ROTATE] Current: 0.383, Target: -1.384, Diff: -1.767
+[INFO] [1743452289.586219]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452289.747689]: [ROTATE] Current: 0.354, Target: -1.384, Diff: -1.739
+[INFO] [1743452289.751549]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452289.912302]: [ROTATE] Current: 0.343, Target: -1.384, Diff: -1.727
+[INFO] [1743452289.915529]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452290.068462]: [ROTATE] Current: 0.327, Target: -1.384, Diff: -1.711
+[INFO] [1743452290.081979]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452290.236993]: [ROTATE] Current: 0.307, Target: -1.384, Diff: -1.692
+[INFO] [1743452290.241496]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452290.394340]: [ROTATE] Current: 0.295, Target: -1.384, Diff: -1.680
+[INFO] [1743452290.400130]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452290.560273]: [ROTATE] Current: 0.271, Target: -1.384, Diff: -1.656
+[INFO] [1743452290.563877]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452290.725990]: [ROTATE] Current: 0.259, Target: -1.384, Diff: -1.643
+[INFO] [1743452290.735717]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452290.889013]: [ROTATE] Current: 0.248, Target: -1.384, Diff: -1.632
+[INFO] [1743452290.894689]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452291.056002]: [ROTATE] Current: 0.219, Target: -1.384, Diff: -1.603
+[INFO] [1743452291.063910]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452291.217685]: [ROTATE] Current: 0.210, Target: -1.384, Diff: -1.594
+[WARN] [1743452291.221686]: Possible wrong direction! Count: 1
+[INFO] [1743452291.225499]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452291.379417]: [ROTATE] Current: 0.184, Target: -1.384, Diff: -1.569
+[INFO] [1743452291.383216]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452291.535995]: [ROTATE] Current: 0.171, Target: -1.384, Diff: -1.555
+[INFO] [1743452291.542718]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452291.696484]: [ROTATE] Current: 0.162, Target: -1.384, Diff: -1.546
+[WARN] [1743452291.700818]: Possible wrong direction! Count: 1
+[INFO] [1743452291.712890]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452291.868613]: [ROTATE] Current: 0.130, Target: -1.384, Diff: -1.514
+[INFO] [1743452291.880399]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452292.034035]: [ROTATE] Current: 0.122, Target: -1.384, Diff: -1.506
+[WARN] [1743452292.041907]: Possible wrong direction! Count: 1
+[INFO] [1743452292.050015]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452292.203807]: [ROTATE] Current: 0.107, Target: -1.384, Diff: -1.491
+[INFO] [1743452292.208423]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452292.372326]: [ROTATE] Current: 0.084, Target: -1.384, Diff: -1.468
+[INFO] [1743452292.377589]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452292.540349]: [ROTATE] Current: 0.074, Target: -1.384, Diff: -1.458
+[INFO] [1743452292.548617]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452292.701313]: [ROTATE] Current: 0.051, Target: -1.384, Diff: -1.435
+[INFO] [1743452292.709340]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452292.873936]: [ROTATE] Current: 0.035, Target: -1.384, Diff: -1.419
+[INFO] [1743452292.885358]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452293.039446]: [ROTATE] Current: 0.027, Target: -1.384, Diff: -1.411
+[WARN] [1743452293.046047]: Possible wrong direction! Count: 1
+[INFO] [1743452293.048918]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452293.201713]: [ROTATE] Current: 0.002, Target: -1.384, Diff: -1.386
+[INFO] [1743452293.207316]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452293.365269]: [ROTATE] Current: -0.012, Target: -1.384, Diff: -1.372
+[INFO] [1743452293.374013]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452293.529426]: [ROTATE] Current: -0.023, Target: -1.384, Diff: -1.361
+[INFO] [1743452293.532801]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452293.691783]: [ROTATE] Current: -0.049, Target: -1.384, Diff: -1.335
+[INFO] [1743452293.702719]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452293.855869]: [ROTATE] Current: -0.056, Target: -1.384, Diff: -1.328
+[WARN] [1743452293.859834]: Possible wrong direction! Count: 1
+[INFO] [1743452293.863320]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452294.028389]: [ROTATE] Current: -0.068, Target: -1.384, Diff: -1.316
+[INFO] [1743452294.038054]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452294.201839]: [ROTATE] Current: -0.096, Target: -1.384, Diff: -1.288
+[INFO] [1743452294.211366]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452294.363950]: [ROTATE] Current: -0.105, Target: -1.384, Diff: -1.279
+[WARN] [1743452294.370095]: Possible wrong direction! Count: 1
+[INFO] [1743452294.379033]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452294.532312]: [ROTATE] Current: -0.128, Target: -1.384, Diff: -1.257
+[INFO] [1743452294.551162]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452294.705808]: [ROTATE] Current: -0.142, Target: -1.384, Diff: -1.242
+[INFO] [1743452294.714098]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452294.869918]: [ROTATE] Current: -0.153, Target: -1.384, Diff: -1.232
+[INFO] [1743452294.878565]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452295.031231]: [ROTATE] Current: -0.179, Target: -1.384, Diff: -1.205
+[INFO] [1743452295.036042]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452295.196369]: [ROTATE] Current: -0.191, Target: -1.384, Diff: -1.193
+[INFO] [1743452295.200324]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452295.362116]: [ROTATE] Current: -0.201, Target: -1.384, Diff: -1.183
+[WARN] [1743452295.371721]: Possible wrong direction! Count: 1
+[INFO] [1743452295.375027]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452295.540301]: [ROTATE] Current: -0.230, Target: -1.384, Diff: -1.154
+[INFO] [1743452295.549440]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452295.702422]: [ROTATE] Current: -0.238, Target: -1.384, Diff: -1.146
+[WARN] [1743452295.705718]: Possible wrong direction! Count: 1
+[INFO] [1743452295.708941]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452295.872570]: [ROTATE] Current: -0.258, Target: -1.384, Diff: -1.126
+[INFO] [1743452295.879518]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452296.042174]: [ROTATE] Current: -0.276, Target: -1.384, Diff: -1.108
+[INFO] [1743452296.047328]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452296.203955]: [ROTATE] Current: -0.285, Target: -1.384, Diff: -1.099
+[WARN] [1743452296.214864]: Possible wrong direction! Count: 1
+[INFO] [1743452296.217994]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452296.370944]: [ROTATE] Current: -0.317, Target: -1.384, Diff: -1.068
+[INFO] [1743452296.375231]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452296.538973]: [ROTATE] Current: -0.326, Target: -1.384, Diff: -1.059
+[WARN] [1743452296.557795]: Possible wrong direction! Count: 1
+[INFO] [1743452296.561781]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452296.715949]: [ROTATE] Current: -0.342, Target: -1.384, Diff: -1.042
+[INFO] [1743452296.719837]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452296.872995]: [ROTATE] Current: -0.362, Target: -1.384, Diff: -1.023
+[INFO] [1743452296.876281]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452297.029563]: [ROTATE] Current: -0.373, Target: -1.384, Diff: -1.012
+[INFO] [1743452297.042663]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452297.196881]: [ROTATE] Current: -0.391, Target: -1.384, Diff: -0.993
+[INFO] [1743452297.201179]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452297.355259]: [ROTATE] Current: -0.411, Target: -1.384, Diff: -0.973
+[INFO] [1743452297.362385]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452297.516185]: [ROTATE] Current: -0.423, Target: -1.384, Diff: -0.961
+[INFO] [1743452297.519334]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452297.672597]: [ROTATE] Current: -0.440, Target: -1.384, Diff: -0.945
+[INFO] [1743452297.681622]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452297.835640]: [ROTATE] Current: -0.456, Target: -1.384, Diff: -0.929
+[INFO] [1743452297.851834]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452298.004994]: [ROTATE] Current: -0.471, Target: -1.384, Diff: -0.914
+[INFO] [1743452298.020715]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452298.174203]: [ROTATE] Current: -0.495, Target: -1.384, Diff: -0.889
+[INFO] [1743452298.180173]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452298.332992]: [ROTATE] Current: -0.509, Target: -1.384, Diff: -0.876
+[INFO] [1743452298.338456]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452298.496675]: [ROTATE] Current: -0.519, Target: -1.384, Diff: -0.865
+[INFO] [1743452298.499885]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452298.653629]: [ROTATE] Current: -0.544, Target: -1.384, Diff: -0.840
+[INFO] [1743452298.753050]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452298.907080]: [ROTATE] Current: -0.561, Target: -1.384, Diff: -0.823
+[INFO] [1743452298.919404]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452299.072696]: [ROTATE] Current: -0.580, Target: -1.384, Diff: -0.804
+[INFO] [1743452299.077084]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452299.238585]: [ROTATE] Current: -0.600, Target: -1.384, Diff: -0.784
+[INFO] [1743452299.248555]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452299.405538]: [ROTATE] Current: -0.618, Target: -1.384, Diff: -0.767
+[INFO] [1743452299.410033]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452299.564249]: [ROTATE] Current: -0.639, Target: -1.384, Diff: -0.745
+[INFO] [1743452299.568322]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452299.723661]: [ROTATE] Current: -0.648, Target: -1.384, Diff: -0.736
+[WARN] [1743452299.727026]: Possible wrong direction! Count: 1
+[INFO] [1743452299.731170]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452299.890042]: [ROTATE] Current: -0.661, Target: -1.384, Diff: -0.723
+[INFO] [1743452299.903451]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452300.057325]: [ROTATE] Current: -0.689, Target: -1.384, Diff: -0.695
+[INFO] [1743452300.076240]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452300.229661]: [ROTATE] Current: -0.700, Target: -1.384, Diff: -0.684
+[INFO] [1743452300.242067]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452300.396251]: [ROTATE] Current: -0.724, Target: -1.384, Diff: -0.660
+[INFO] [1743452300.400481]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452300.554363]: [ROTATE] Current: -0.737, Target: -1.384, Diff: -0.647
+[INFO] [1743452300.566830]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452300.720300]: [ROTATE] Current: -0.748, Target: -1.384, Diff: -0.636
+[INFO] [1743452300.725482]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452300.878080]: [ROTATE] Current: -0.772, Target: -1.384, Diff: -0.612
+[INFO] [1743452300.883674]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452301.040865]: [ROTATE] Current: -0.784, Target: -1.384, Diff: -0.600
+[INFO] [1743452301.050644]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452301.204052]: [ROTATE] Current: -0.797, Target: -1.384, Diff: -0.587
+[INFO] [1743452301.212545]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452301.370767]: [ROTATE] Current: -0.826, Target: -1.384, Diff: -0.559
+[INFO] [1743452301.377512]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452301.535176]: [ROTATE] Current: -0.834, Target: -1.384, Diff: -0.551
+[WARN] [1743452301.538837]: Possible wrong direction! Count: 1
+[INFO] [1743452301.549771]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452301.707573]: [ROTATE] Current: -0.850, Target: -1.384, Diff: -0.534
+[INFO] [1743452301.718726]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452301.872119]: [ROTATE] Current: -0.876, Target: -1.384, Diff: -0.508
+[INFO] [1743452301.878061]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452302.035692]: [ROTATE] Current: -0.887, Target: -1.384, Diff: -0.497
+[INFO] [1743452302.046277]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452302.205988]: [ROTATE] Current: -0.911, Target: -1.384, Diff: -0.473
+[INFO] [1743452302.211118]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452302.364130]: [ROTATE] Current: -0.921, Target: -1.384, Diff: -0.463
+[INFO] [1743452302.375357]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452302.528634]: [ROTATE] Current: -0.935, Target: -1.384, Diff: -0.449
+[INFO] [1743452302.542298]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452302.695769]: [ROTATE] Current: -0.959, Target: -1.384, Diff: -0.425
+[INFO] [1743452302.702602]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452302.856092]: [ROTATE] Current: -0.971, Target: -1.384, Diff: -0.413
+[INFO] [1743452302.868028]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452303.022969]: [ROTATE] Current: -0.987, Target: -1.384, Diff: -0.397
+[INFO] [1743452303.031658]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452303.184935]: [ROTATE] Current: -1.007, Target: -1.384, Diff: -0.377
+[INFO] [1743452303.188955]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452303.344435]: [ROTATE] Current: -1.022, Target: -1.384, Diff: -0.362
+[INFO] [1743452303.354842]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452303.518538]: [ROTATE] Current: -1.043, Target: -1.384, Diff: -0.341
+[INFO] [1743452303.524242]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452303.686822]: [ROTATE] Current: -1.059, Target: -1.384, Diff: -0.326
+[INFO] [1743452303.691576]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452303.984451]: [ROTATE] Current: -1.091, Target: -1.384, Diff: -0.293
+[INFO] [1743452303.996728]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452304.152286]: [ROTATE] Current: -1.108, Target: -1.384, Diff: -0.276
+[INFO] [1743452304.159409]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452304.312416]: [ROTATE] Current: -1.116, Target: -1.384, Diff: -0.268
+[WARN] [1743452304.323176]: Possible wrong direction! Count: 1
+[INFO] [1743452304.326665]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452304.483097]: [ROTATE] Current: -1.136, Target: -1.384, Diff: -0.248
+[INFO] [1743452304.496125]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452304.653424]: [ROTATE] Current: -1.158, Target: -1.384, Diff: -0.226
+[INFO] [1743452304.663647]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452304.824882]: [ROTATE] Current: -1.174, Target: -1.384, Diff: -0.210
+[INFO] [1743452304.829256]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452304.982663]: [ROTATE] Current: -1.194, Target: -1.384, Diff: -0.191
+[INFO] [1743452304.989486]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452305.153405]: [ROTATE] Current: -1.206, Target: -1.384, Diff: -0.179
+[INFO] [1743452305.156473]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452305.308873]: [ROTATE] Current: -1.223, Target: -1.384, Diff: -0.161
+[INFO] [1743452305.318394]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452305.471031]: [ROTATE] Current: -1.245, Target: -1.384, Diff: -0.139
+[INFO] [1743452305.477545]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452305.631160]: [ROTATE] Current: -1.258, Target: -1.384, Diff: -0.126
+[INFO] [1743452305.634524]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452305.787665]: [ROTATE] Current: -1.279, Target: -1.384, Diff: -0.105
+[INFO] [1743452305.791229]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452305.943901]: [ROTATE] Current: -1.296, Target: -1.384, Diff: -0.088
+[INFO] [1743452305.952355]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452306.105713]: [ROTATE] Current: -1.303, Target: -1.384, Diff: -0.081
+[WARN] [1743452306.109346]: Possible wrong direction! Count: 1
+[INFO] [1743452306.121373]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452306.278281]: [ROTATE] Current: -1.328, Target: -1.384, Diff: -0.057
+[INFO] [1743452306.295371]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452306.448762]: [ROTATE] Current: -1.343, Target: -1.384, Diff: -0.041
+[INFO] [1743452306.454544]: [ROTATE] Rotation complete
+[INFO] [1743452306.457992]: [UDP] Sending Linear=0.000, Angular=0.000
+[INFO] [1743452306.460359]: [MOVE] Moving forward 0.139 meters
+[INFO] [1743452306.465341]: [MOVE] Traveled: 0.000 meters
+[INFO] [1743452306.473223]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452306.577398]: [MOVE] Traveled: 0.000 meters
+[INFO] [1743452306.587346]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452306.690918]: [MOVE] Traveled: 0.001 meters
+[INFO] [1743452306.694058]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452306.796349]: [MOVE] Traveled: 0.005 meters
+[INFO] [1743452306.806836]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452306.910446]: [MOVE] Traveled: 0.010 meters
+[INFO] [1743452306.921098]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452307.024169]: [MOVE] Traveled: 0.045 meters
+[INFO] [1743452307.031816]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452307.144816]: [MOVE] Traveled: 0.071 meters
+[INFO] [1743452307.156125]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452307.259528]: [MOVE] Traveled: 0.095 meters
+[INFO] [1743452307.268294]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452307.371421]: [MOVE] Traveled: 0.134 meters
+[INFO] [1743452307.374975]: [UDP] Sending Linear=0.200, Angular=0.000
+[INFO] [1743452307.486475]: [MOVE] Traveled: 0.158 meters
+[INFO] [1743452307.496732]: [UDP] Sending Linear=0.000, Angular=0.000
+[INFO] [1743452307.500813]: [ROTATE] Current: -1.376, Target: 0.000, Diff: 1.376
+[INFO] [1743452307.504113]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452307.657562]: [ROTATE] Current: -1.382, Target: 0.000, Diff: 1.382
+[WARN] [1743452307.669678]: Possible wrong direction! Count: 1
+[INFO] [1743452307.672930]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452307.827388]: [ROTATE] Current: -1.389, Target: 0.000, Diff: 1.389
+[WARN] [1743452307.837420]: Possible wrong direction! Count: 2
+[INFO] [1743452307.840329]: [UDP] Sending Linear=0.000, Angular=0.100
+[INFO] [1743452307.993686]: [ROTATE] Current: -1.401, Target: 0.000, Diff: 1.401
+[WARN] [1743452308.005130]: Possible wrong direction! Count: 3
+[WARN] [1743452308.011478]: Direction reversed due to wrong movement!
+[INFO] [1743452308.014014]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452308.166599]: [ROTATE] Current: -1.416, Target: 0.000, Diff: 1.416
+[WARN] [1743452308.170018]: Possible wrong direction! Count: 1
+[INFO] [1743452308.172920]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452308.330319]: [ROTATE] Current: -1.413, Target: 0.000, Diff: 1.413
+[WARN] [1743452308.336009]: Possible wrong direction! Count: 2
+[INFO] [1743452308.340149]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452308.493862]: [ROTATE] Current: -1.402, Target: 0.000, Diff: 1.402
+[INFO] [1743452308.496930]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452308.650045]: [ROTATE] Current: -1.396, Target: 0.000, Diff: 1.396
+[WARN] [1743452308.655885]: Possible wrong direction! Count: 1
+[INFO] [1743452308.662868]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452308.819855]: [ROTATE] Current: -1.378, Target: 0.000, Diff: 1.378
+[INFO] [1743452308.826337]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452308.985028]: [ROTATE] Current: -1.362, Target: 0.000, Diff: 1.362
+[INFO] [1743452308.990558]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452309.143588]: [ROTATE] Current: -1.350, Target: 0.000, Diff: 1.350
+[INFO] [1743452309.156674]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452309.315686]: [ROTATE] Current: -1.326, Target: 0.000, Diff: 1.326
+[INFO] [1743452309.323173]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452309.476436]: [ROTATE] Current: -1.313, Target: 0.000, Diff: 1.313
+[INFO] [1743452309.479937]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452309.636823]: [ROTATE] Current: -1.292, Target: 0.000, Diff: 1.292
+[INFO] [1743452309.649265]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452309.803053]: [ROTATE] Current: -1.280, Target: 0.000, Diff: 1.280
+[INFO] [1743452309.814507]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452309.967767]: [ROTATE] Current: -1.270, Target: 0.000, Diff: 1.270
+[WARN] [1743452309.971387]: Possible wrong direction! Count: 1
+[INFO] [1743452309.974528]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452310.127502]: [ROTATE] Current: -1.244, Target: 0.000, Diff: 1.244
+[INFO] [1743452310.130769]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452310.284304]: [ROTATE] Current: -1.234, Target: 0.000, Diff: 1.234
+[INFO] [1743452310.291877]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452310.445946]: [ROTATE] Current: -1.219, Target: 0.000, Diff: 1.219
+[INFO] [1743452310.449630]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452310.608197]: [ROTATE] Current: -1.194, Target: 0.000, Diff: 1.194
+[INFO] [1743452310.620673]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452310.786849]: [ROTATE] Current: -1.178, Target: 0.000, Diff: 1.178
+[INFO] [1743452310.802287]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452310.955815]: [ROTATE] Current: -1.157, Target: 0.000, Diff: 1.157
+[INFO] [1743452310.971393]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452311.124964]: [ROTATE] Current: -1.143, Target: 0.000, Diff: 1.143
+[INFO] [1743452311.131384]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452311.284928]: [ROTATE] Current: -1.129, Target: 0.000, Diff: 1.129
+[INFO] [1743452311.292887]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452311.449907]: [ROTATE] Current: -1.119, Target: 0.000, Diff: 1.119
+[INFO] [1743452311.454184]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452311.607688]: [ROTATE] Current: -1.093, Target: 0.000, Diff: 1.093
+[INFO] [1743452311.612072]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452311.765967]: [ROTATE] Current: -1.079, Target: 0.000, Diff: 1.079
+[INFO] [1743452311.774542]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452311.929145]: [ROTATE] Current: -1.059, Target: 0.000, Diff: 1.059
+[INFO] [1743452311.932964]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452312.086223]: [ROTATE] Current: -1.046, Target: 0.000, Diff: 1.046
+[INFO] [1743452312.093838]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452312.247098]: [ROTATE] Current: -1.034, Target: 0.000, Diff: 1.034
+[INFO] [1743452312.250298]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452312.410616]: [ROTATE] Current: -1.009, Target: 0.000, Diff: 1.009
+[INFO] [1743452312.417588]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452312.574895]: [ROTATE] Current: -1.001, Target: 0.000, Diff: 1.001
+[WARN] [1743452312.584098]: Possible wrong direction! Count: 1
+[INFO] [1743452312.586919]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452312.747499]: [ROTATE] Current: -0.977, Target: 0.000, Diff: 0.977
+[INFO] [1743452312.750997]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452312.908042]: [ROTATE] Current: -0.958, Target: 0.000, Diff: 0.958
+[INFO] [1743452312.911864]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452313.079194]: [ROTATE] Current: -0.947, Target: 0.000, Diff: 0.947
+[INFO] [1743452313.085709]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452313.242560]: [ROTATE] Current: -0.916, Target: 0.000, Diff: 0.916
+[INFO] [1743452313.252314]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452313.405747]: [ROTATE] Current: -0.913, Target: 0.000, Diff: 0.913
+[WARN] [1743452313.409226]: Possible wrong direction! Count: 1
+[INFO] [1743452313.412068]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452313.573300]: [ROTATE] Current: -0.890, Target: 0.000, Diff: 0.890
+[INFO] [1743452313.580039]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452313.739936]: [ROTATE] Current: -0.866, Target: 0.000, Diff: 0.866
+[INFO] [1743452313.745511]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452313.899105]: [ROTATE] Current: -0.855, Target: 0.000, Diff: 0.855
+[INFO] [1743452314.038767]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452314.192714]: [ROTATE] Current: -0.818, Target: 0.000, Diff: 0.818
+[INFO] [1743452314.197105]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452314.349877]: [ROTATE] Current: -0.810, Target: 0.000, Diff: 0.810
+[WARN] [1743452314.354320]: Possible wrong direction! Count: 1
+[INFO] [1743452314.364051]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452314.517554]: [ROTATE] Current: -0.793, Target: 0.000, Diff: 0.793
+[INFO] [1743452314.526053]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452314.678816]: [ROTATE] Current: -0.773, Target: 0.000, Diff: 0.773
+[INFO] [1743452314.682204]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452314.836285]: [ROTATE] Current: -0.760, Target: 0.000, Diff: 0.760
+[INFO] [1743452314.842403]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452315.000660]: [ROTATE] Current: -0.738, Target: 0.000, Diff: 0.738
+[INFO] [1743452315.004132]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452315.160254]: [ROTATE] Current: -0.725, Target: 0.000, Diff: 0.725
+[INFO] [1743452315.175322]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452315.328401]: [ROTATE] Current: -0.710, Target: 0.000, Diff: 0.710
+[INFO] [1743452315.331819]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452315.484515]: [ROTATE] Current: -0.688, Target: 0.000, Diff: 0.688
+[INFO] [1743452315.494606]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452315.652844]: [ROTATE] Current: -0.671, Target: 0.000, Diff: 0.671
+[INFO] [1743452315.659374]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452315.812184]: [ROTATE] Current: -0.655, Target: 0.000, Diff: 0.655
+[INFO] [1743452315.816872]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452315.982143]: [ROTATE] Current: -0.640, Target: 0.000, Diff: 0.640
+[INFO] [1743452315.995387]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452316.153897]: [ROTATE] Current: -0.625, Target: 0.000, Diff: 0.625
+[INFO] [1743452316.162103]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452316.315248]: [ROTATE] Current: -0.609, Target: 0.000, Diff: 0.609
+[INFO] [1743452316.318634]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452316.471964]: [ROTATE] Current: -0.586, Target: 0.000, Diff: 0.586
+[INFO] [1743452316.475337]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452316.628742]: [ROTATE] Current: -0.576, Target: 0.000, Diff: 0.576
+[WARN] [1743452316.632402]: Possible wrong direction! Count: 1
+[INFO] [1743452316.636758]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452316.794642]: [ROTATE] Current: -0.555, Target: 0.000, Diff: 0.555
+[INFO] [1743452316.807557]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452316.964132]: [ROTATE] Current: -0.537, Target: 0.000, Diff: 0.537
+[INFO] [1743452316.968894]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452317.122090]: [ROTATE] Current: -0.532, Target: 0.000, Diff: 0.532
+[WARN] [1743452317.132786]: Possible wrong direction! Count: 1
+[INFO] [1743452317.135715]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452317.288680]: [ROTATE] Current: -0.502, Target: 0.000, Diff: 0.502
+[INFO] [1743452317.292441]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452317.452268]: [ROTATE] Current: -0.489, Target: 0.000, Diff: 0.489
+[INFO] [1743452317.462723]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452317.624787]: [ROTATE] Current: -0.478, Target: 0.000, Diff: 0.478
+[INFO] [1743452317.630240]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452317.783231]: [ROTATE] Current: -0.457, Target: 0.000, Diff: 0.457
+[INFO] [1743452317.792904]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452317.953587]: [ROTATE] Current: -0.440, Target: 0.000, Diff: 0.440
+[INFO] [1743452317.956993]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452318.116638]: [ROTATE] Current: -0.430, Target: 0.000, Diff: 0.430
+[WARN] [1743452318.132805]: Possible wrong direction! Count: 1
+[INFO] [1743452318.135618]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452318.287998]: [ROTATE] Current: -0.406, Target: 0.000, Diff: 0.406
+[INFO] [1743452318.296778]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452318.450505]: [ROTATE] Current: -0.392, Target: 0.000, Diff: 0.392
+[INFO] [1743452318.456083]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452318.609906]: [ROTATE] Current: -0.373, Target: 0.000, Diff: 0.373
+[INFO] [1743452318.613825]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452318.767318]: [ROTATE] Current: -0.355, Target: 0.000, Diff: 0.355
+[INFO] [1743452318.770366]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452318.923460]: [ROTATE] Current: -0.342, Target: 0.000, Diff: 0.342
+[INFO] [1743452319.082355]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452319.235500]: [ROTATE] Current: -0.308, Target: 0.000, Diff: 0.308
+[INFO] [1743452319.247307]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452319.400791]: [ROTATE] Current: -0.295, Target: 0.000, Diff: 0.295
+[INFO] [1743452319.404229]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452319.556533]: [ROTATE] Current: -0.272, Target: 0.000, Diff: 0.272
+[INFO] [1743452319.566087]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452319.731220]: [ROTATE] Current: -0.261, Target: 0.000, Diff: 0.261
+[INFO] [1743452319.735345]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452319.888347]: [ROTATE] Current: -0.245, Target: 0.000, Diff: 0.245
+[INFO] [1743452319.900083]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452320.054976]: [ROTATE] Current: -0.222, Target: 0.000, Diff: 0.222
+[INFO] [1743452320.070243]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452320.223680]: [ROTATE] Current: -0.211, Target: 0.000, Diff: 0.211
+[INFO] [1743452320.231059]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452320.397358]: [ROTATE] Current: -0.191, Target: 0.000, Diff: 0.191
+[INFO] [1743452320.400635]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452320.553319]: [ROTATE] Current: -0.178, Target: 0.000, Diff: 0.178
+[INFO] [1743452320.567590]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452320.721661]: [ROTATE] Current: -0.167, Target: 0.000, Diff: 0.167
+[INFO] [1743452320.725751]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452320.887421]: [ROTATE] Current: -0.142, Target: 0.000, Diff: 0.142
+[INFO] [1743452320.891650]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452321.053217]: [ROTATE] Current: -0.125, Target: 0.000, Diff: 0.125
+[INFO] [1743452321.065950]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452321.230313]: [ROTATE] Current: -0.110, Target: 0.000, Diff: 0.110
+[INFO] [1743452321.248443]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452321.402553]: [ROTATE] Current: -0.089, Target: 0.000, Diff: 0.089
+[INFO] [1743452321.409854]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452321.564119]: [ROTATE] Current: -0.079, Target: 0.000, Diff: 0.079
+[INFO] [1743452321.570316]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452321.732564]: [ROTATE] Current: -0.062, Target: 0.000, Diff: 0.062
+[INFO] [1743452321.745952]: [UDP] Sending Linear=0.000, Angular=-0.100
+[INFO] [1743452321.904672]: [ROTATE] Current: -0.037, Target: 0.000, Diff: 0.037
+[INFO] [1743452321.909268]: [ROTATE] Rotation complete
+[INFO] [1743452321.912480]: [UDP] Sending Linear=0.000, Angular=0.000
+[INFO] [1743452321.915405]: [EXECUTE] Motion Execution Completed
+

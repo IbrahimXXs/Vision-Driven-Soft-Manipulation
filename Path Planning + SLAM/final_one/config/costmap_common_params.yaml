@@ -1,0 +1,14 @@
+inflation_radius: 0.4  # Keep distance from obstacles
+obstacle_range: 2.5  # Maximum range to detect obstacles
+raytrace_range: 3.0  # Maximum range to clear obstacles
+max_obstacle_height: 0.6  # Ignore obstacles above 60 cm
+robot_radius: 0.25  # If using a circular footprint
+robot_base_frame: base_link
+
+obstacle_layer:
+  track_unknown_space: true  # True if unknown space should be used
+  combination_method: 1  # Overwrite costmap
+  obstacle_range: 2.5
+  raytrace_range: 3.0
+  observation_sources: depth_camera
+  depth_camera: {sensor_frame: camera_link, data_type: PointCloud2, topic: /rtabmap/cloud_obstacles, marking: true, clearing: true}

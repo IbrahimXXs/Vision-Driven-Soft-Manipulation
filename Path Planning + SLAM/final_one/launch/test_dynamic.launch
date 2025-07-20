@@ -1,0 +1,22 @@
+<launch>
+<param name="/use_sim_time" value="false"/>
+<arg name="robot_frame" default="base_link"/>
+    <arg name="world_frame" default="map"/>
+    <node pkg="move_base" type="move_base" name="move_base" output="screen">
+        <rosparam file="$(find final_one)/config/global_costmap.yaml" command="load" ns="global_costmap"/>
+        <rosparam file="$(find final_one)/config/local_costmap.yaml" command="load" ns="local_costmap"/>
+        <rosparam file="$(find final_one)/config/costmap_common_params.yaml" command="load"/>
+        <rosparam file="$(find final_one)/config/move_base_params.yaml" command="load"/>
+        <rosparam file="$(find final_one)/config/global_planner_params.yaml" command="load"/>
+        <rosparam file="$(find final_one)/config/local_planner_params.yaml" command="load"/>
+        <remap from="/odom" to="/rtabmap/odom"/>
+        <remap from="/map" to="/rtabmap/grid_map" />
+    </node>
+    <!--<node pkg="final_one" type="lite3_path_executor.py" name="path_executor" output="screen">
+        <param name="ip" value="192.168.1.120"/>
+        <param name="port" value="43893"/>
+        <param name="robot_frame" value="$(arg robot_frame)"/>
+        <param name="world_frame" value="$(arg world_frame)"/>
+        <remap from="/move_base/TrajectoryPlannerROS/global_plan" to="/move_base/TrajectoryPlannerROS/global_plan"/>
+    </node>-->
+</launch>

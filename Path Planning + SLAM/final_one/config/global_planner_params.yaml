@@ -1,0 +1,6 @@
+NavfnROS:
+  allow_unknown: true  # Enable exploration in unknown areas
+  default_tolerance: 0.5
+  use_dijkstra: true
+  use_quadratic: true
+  use_grid_path: false

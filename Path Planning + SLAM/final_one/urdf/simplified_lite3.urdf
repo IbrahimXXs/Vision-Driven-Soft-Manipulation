@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot name="lite3_robot">
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.610 0.370 0.445"/>
+      </geometry>
+      <origin xyz="0 0 0.2225" rpy="0 0 0"/>  <!-- Lift base_link so bottom touches the ground -->
+      <!--<material name="gray"/>-->
+    </visual>
+  </link>
+
+  <!-- IMU Link -->
+  <link name="imu"/>
+
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Camera Link -->
+  <link name="camera_link"/>
+
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.2 0 0.2" rpy="0 0.3235 0"/>
+</joint>
+
+</robot>
+

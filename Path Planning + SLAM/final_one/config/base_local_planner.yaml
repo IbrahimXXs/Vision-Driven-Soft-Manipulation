@@ -1,0 +1,27 @@
+TebLocalPlannerROS:
+  odom_topic: odom
+  map_frame: odom
+
+  # Robot specs
+  max_vel_x: 0.4
+  max_vel_theta: 1.0
+  acc_lim_x: 0.5
+  acc_lim_theta: 0.5
+
+  # Goal tolerance
+  xy_goal_tolerance: 0.2
+  yaw_goal_tolerance: 0.2
+  free_goal_vel: false
+
+  # Obstacles
+  min_obstacle_dist: 0.4
+  include_costmap_obstacles: true
+  costmap_obstacles_behind_robot_dist: 1.0
+  obstacle_poses_affected: 30
+
+  # Optimization
+  no_inner_iterations: 5
+  no_outer_iterations: 4
+  weight_max_vel_x: 2
+  weight_kinematics_forward_drive: 1
+  weight_obstacle: 50
