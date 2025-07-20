@@ -2,10 +2,7 @@
 
 **Integrating Soft Robotics and Computer Vision for Intelligent Environment Interaction**
 
-**Authors:**  
-- Ramy Kachwaa (MBZUAI) – [ramy.kachwaa@mbzuai.ac.ae](mailto:ramy.kachwaa@mbzuai.ac.ae)  
-- Ibrahim Alsarraj (MBZUAI) – [ibrahim.alsarraj@mbzuai.ac.ae](mailto:ibrahim.alsarraj@mbzuai.ac.ae)  
-- Nakul Nibe (MBZUAI) – [nakul.nibe@mbzuai.ac.ae](mailto:nakul.nibe@mbzuai.ac.ae)
+
 
 ---
 
