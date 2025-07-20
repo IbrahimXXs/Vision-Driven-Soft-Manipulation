@@ -77,6 +77,9 @@ Key achievements:
 
 ---
 
+### 🛠️ System Architecture
+
+text
 [RGB-D Camera]
        |
 [RTAB-Map SLAM] --> [2D Occupancy Grid] + [3D Point Cloud]
@@ -88,7 +91,6 @@ Key achievements:
  [GPT-4.1 Vision API] <-- if confidence < 50%
        |
 [Soft Manipulator] --> Grasps final object
-
 
 
 
