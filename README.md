@@ -2,8 +2,8 @@
 
 **Integrating Soft Robotics and Computer Vision for Intelligent Environment Interaction**
 
+<img width="8269" height="1894" alt="FrameXDSS-1" src="https://github.com/user-attachments/assets/f53abc78-4211-4f3d-8ae6-f53387186975" />
 
-[FrameXDSS.pdf](https://github.com/user-attachments/files/21336388/FrameXDSS.pdf)
 
 ---
 
